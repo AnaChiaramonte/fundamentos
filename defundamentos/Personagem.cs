@@ -29,13 +29,13 @@ namespace defundamentos
         public virtual int Atacar()
         {
             int pontosdeAtaque = 0;
-            pontosdeAtaque = (this.Agilidade + (this.Forca * 2) + this.inteligencia + this.Nivel + this.Vida) / 5;
+            pontosdeAtaque = (this.Agilidade + (this.Forca * 3) + this.inteligencia + this.Nivel) / 5;
             return pontosdeAtaque;
         }
         public virtual int Defender()
         {
             int defesa = 0;
-            defesa = ((this.Agilidade * 2) + this.Forca + (this.inteligencia * 2) + this.Nivel + this.Vida) / 5;
+            defesa = ((this.Agilidade * 2) + this.Forca + (this.inteligencia * 2) + this.Nivel) / 4;
             return defesa;
         }
         public virtual void Batalha(Personagem p)

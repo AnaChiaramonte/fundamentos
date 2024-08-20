@@ -165,9 +165,9 @@ internal class Program
         //galinha.emitirSom();
         Elfo elfo = new Elfo();
         elfo.Nome = " Tinker ";
-        elfo.Vida = 95;
-        elfo.inteligencia = 87;
         elfo.Forca = 55;
+        elfo.Vida = 100;
+        elfo.inteligencia = 87;
         elfo.Agilidade = 60;
         elfo.Nivel = 1;
 
@@ -188,7 +188,7 @@ internal class Program
         cavaleiro.Forca = 10;
         cavaleiro.Vida = 100;
         cavaleiro.Agilidade = 70;
-        cavaleiro.inteligencia = 90;
+        cavaleiro.inteligencia = 33;
         cavaleiro.Nivel = 1;
 
 
