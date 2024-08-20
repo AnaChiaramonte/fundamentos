@@ -1,5 +1,6 @@
 ﻿using defundamentos;
 using System.Security.Cryptography.X509Certificates;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 internal class Program
 {
@@ -144,23 +145,56 @@ internal class Program
         //livro3.AnoLancamento = 2000;
         //livro3.Autor = "Cristiano de Paula";
 
-        Gato gato = new Gato();
-        gato.Nome = "Sr.Meia Noite";
-        Console.WriteLine(gato.Nome + " faz: ");
-        gato.emitirSom();
+        //Gato gato = new Gato();
+        //gato.Nome = "Sr.Meia Noite";
+        //Console.WriteLine(gato.Nome + " faz: ");
+        //gato.emitirSom();
 
-        Console.WriteLine();
+        //Console.WriteLine();
 
-        Porco porco = new Porco();
-        porco.Nome = "Gleison";
-        Console.WriteLine(porco.Nome + " faz :");
-        porco.emitirSom();
+        //Porco porco = new Porco();
+        //porco.Nome = "Gleison";
+        //Console.WriteLine(porco.Nome + " faz :");
+        //porco.emitirSom();
 
-        Console.WriteLine();
+        //Console.WriteLine();
 
-        Galinha galinha = new Galinha();
-        galinha.Nome = "Albert Einstein";
-        Console.WriteLine(galinha.Nome + " faz :");
-        galinha.emitirSom();
+        //Galinha galinha = new Galinha();
+        //galinha.Nome = "Albert Einstein";
+        //Console.WriteLine(galinha.Nome + " faz :");
+        //galinha.emitirSom();
+        Elfo elfo = new Elfo();
+        elfo.Nome = " Tinker ";
+        elfo.Vida = 95;
+        elfo.inteligencia = 87;
+        elfo.Forca = 55;
+        elfo.Agilidade = 60;
+        elfo.Nivel = 1;
+
+
+        Mago mago = new Mago();
+        mago.Nome = " Cleiton ";
+        mago.Forca = 80;
+        mago.Vida = 100;
+        mago.Agilidade = 55;
+        mago.inteligencia = 90;
+        mago.Nivel = 1;
+
+
+
+        Cavaleiro cavaleiro = new Cavaleiro();
+
+        cavaleiro.Nome = " Jerson ";
+        cavaleiro.Forca = 10;
+        cavaleiro.Vida = 100;
+        cavaleiro.Agilidade = 70;
+        cavaleiro.inteligencia = 90;
+        cavaleiro.Nivel = 1;
+
+
+        mago.Apresentarse();
+        cavaleiro.Apresentarse();
+        mago.Batalha(cavaleiro);
+
     }
 }
