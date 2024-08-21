@@ -196,5 +196,6 @@ internal class Program
         cavaleiro.Apresentarse();
         mago.Batalha(cavaleiro);
 
+
     }
 }

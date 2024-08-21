@@ -25,7 +25,15 @@ namespace defundamentos
         //metodos
 
         public virtual void Apresentarse() { }
-        public virtual void Evoluir() { }
+        public virtual void Evoluir()
+        {
+
+            this.Nivel += 2;
+            this.Forca *= 2;
+            this.inteligencia *= 2;
+            this.Agilidade *= 2;
+            Console.WriteLine("O jogador " + this.Nome + " evoluiu para o nível " + this.Nivel + ". Seus novos valores são: \nAgilidade: " + this.Agilidade + "\nInteligência: " + this.inteligencia + "\nForça " + this.Forca);
+        }
         public virtual int Atacar()
         {
             int pontosdeAtaque = 0;
@@ -79,6 +87,7 @@ namespace defundamentos
                 {
                     Console.WriteLine("O vencedor " + this.Nome + "venceu");
                     vencedor = true;
+                    this.Evoluir();
                 }
             }
         }
